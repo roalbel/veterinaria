@@ -6,6 +6,7 @@ namespace veterinaria.infretruture.Model
 
     public class MascotaModel
     {
+        [Key]
         public int MascotaId { get; set; }
         public string Nombre { get; set; }
         public string Tipo { get; set; } 

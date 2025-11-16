@@ -11,7 +11,7 @@ namespace veterinaria.infretruture.DBContex
         public DbSet<MascotaModel> Mascotas { get; set; }
         public DbSet<VacunaModel> Vacunas { get; set; }
         public DbSet<PropietarioModel> Propietarios { get; set; }
-       
 
+        public VeterinariaContex() { }
     }
-}
+} 

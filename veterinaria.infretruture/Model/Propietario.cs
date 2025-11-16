@@ -7,6 +7,7 @@ namespace veterinaria.infretruture.Model
 
     public class PropietarioModel
     {
+        [Key]
         public int PropietatioId { get; set; }
         public string Nombre { get; set; }
         public string Cedula { get; set; }

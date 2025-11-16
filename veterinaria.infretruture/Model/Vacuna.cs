@@ -8,6 +8,7 @@ namespace veterinaria.infretruture.Model
 
     public class VacunaModel
     {
+        [Key]
         public int VacunaId { get; set; }
         public string NombreVacuna { get; set; }
         public DateTime FechaAplicacion { get; set; }
