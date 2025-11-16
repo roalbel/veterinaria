@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Veterinaria.Aplication\Veterinaria.Aplication.csproj" />
     <ProjectReference Include="..\Veterinaria.Domain\Veterinaria.Domain.csproj" />
     <ProjectReference Include="..\veterinaria.infretruture\veterinaria.infretruture.csproj" />
   </ItemGroup>

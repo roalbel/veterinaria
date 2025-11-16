@@ -1,4 +1,4 @@
-﻿namespace Veteriania.API.DTOS
+﻿namespace Veterinaria.Aplication.DTOS
 {
     public class VacunaDto
     {

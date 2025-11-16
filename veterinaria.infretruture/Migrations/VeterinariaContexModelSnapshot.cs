@@ -44,9 +44,14 @@ namespace veterinaria.infretruture.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PropietarioId")
+                        .HasColumnType("int");
+
                     b.HasKey("CitaId");
 
                     b.HasIndex("MascotaId");
+
+                    b.HasIndex("PropietarioId");
 
                     b.ToTable("Citas");
                 });
@@ -150,7 +155,15 @@ namespace veterinaria.infretruture.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("veterinaria.infretruture.Model.PropietarioModel", "Propietario")
+                        .WithMany("Citas")
+                        .HasForeignKey("PropietarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.Navigation("Mascota");
+
+                    b.Navigation("Propietario");
                 });
 
             modelBuilder.Entity("veterinaria.infretruture.Model.MascotaModel", b =>
@@ -184,6 +197,8 @@ namespace veterinaria.infretruture.Migrations
 
             modelBuilder.Entity("veterinaria.infretruture.Model.PropietarioModel", b =>
                 {
+                    b.Navigation("Citas");
+
                     b.Navigation("Mascotas");
                 });
 #pragma warning restore 612, 618

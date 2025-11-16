@@ -10,7 +10,8 @@ namespace veterinaria.infretruture.Model;
         public string Estado { get; set; } 
         public int MascotaId { get; set; }
         public MascotaModel Mascota { get; set; }
-
+    public int PropietarioId { get; set; }
+    public PropietarioModel Propietario { get; set; }
         public CitaModel() { }
     }
 

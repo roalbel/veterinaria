@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using veterinaria.infretruture.DBContex;
 using veterinaria.infretruture.Model;
-using Veteriania.API.DTOS;
+using Veterinaria.Aplication.DTOS;
 
 
 namespace CRUD_API.Controllers

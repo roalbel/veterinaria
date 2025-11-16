@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace veterinaria.infretruture.Migrations
 {
     /// <inheritdoc />
-    public partial class da : Migration
+    public partial class dff : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -59,7 +59,8 @@ namespace veterinaria.infretruture.Migrations
                     FechaCita = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Motivo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MascotaId = table.Column<int>(type: "int", nullable: false)
+                    MascotaId = table.Column<int>(type: "int", nullable: false),
+                    PropietarioId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -70,6 +71,12 @@ namespace veterinaria.infretruture.Migrations
                         principalTable: "Mascotas",
                         principalColumn: "MascotaId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Citas_Propietarios_PropietarioId",
+                        column: x => x.PropietarioId,
+                        principalTable: "Propietarios",
+                        principalColumn: "PropietatioId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -98,6 +105,11 @@ namespace veterinaria.infretruture.Migrations
                 name: "IX_Citas_MascotaId",
                 table: "Citas",
                 column: "MascotaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Citas_PropietarioId",
+                table: "Citas",
+                column: "PropietarioId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Mascotas_PropietarioId",

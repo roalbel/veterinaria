@@ -16,6 +16,8 @@ namespace veterinaria.infretruture.Model
 
  
         public List<MascotaModel> Mascotas { get; set; }
+        public List<CitaModel> Citas { get; set; }
+
 
         public PropietarioModel()
         {

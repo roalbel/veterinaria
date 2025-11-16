@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veterinaria.Domain", "Veter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veterinaria.infretruture", "veterinaria.infretruture\veterinaria.infretruture.csproj", "{4EF725EF-7C60-4AD5-82AC-904CC4C9F2B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinaria.Aplication", "Veterinaria.Aplication\Veterinaria.Aplication.csproj", "{20B99EFD-BF70-4127-9F54-5245334CCB61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4EF725EF-7C60-4AD5-82AC-904CC4C9F2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EF725EF-7C60-4AD5-82AC-904CC4C9F2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EF725EF-7C60-4AD5-82AC-904CC4C9F2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B99EFD-BF70-4127-9F54-5245334CCB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B99EFD-BF70-4127-9F54-5245334CCB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B99EFD-BF70-4127-9F54-5245334CCB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B99EFD-BF70-4127-9F54-5245334CCB61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
