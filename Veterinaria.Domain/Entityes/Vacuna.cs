@@ -13,11 +13,6 @@ namespace tallermecanico.domain.Entityes
         public DateTime FechaAplicacion { get; set; }
         public string Veterinario { get; set; }
 
-        // Relación con Mascota
-        public int MascotaId { get; set; }
-        public Mascota Mascota { get; set; }
-
-        public Vacuna() { }
     }
 
 }
