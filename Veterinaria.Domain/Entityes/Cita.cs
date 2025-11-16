@@ -7,13 +7,7 @@ namespace tallermecanico.domain.Entityes
         public int Id { get; set; }
         public DateTime FechaCita { get; set; }
         public string Motivo { get; set; }
-        public string Estado { get; set; } // Pendiente, Completada, Cancelada
-
-        // Relación con Mascota
-        public int MascotaId { get; set; }
-        public Mascota Mascota { get; set; }
-
-        public Cita() { }
+        public string Estado { get; set; } 
     }
 
 }
